@@ -12,7 +12,7 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	return (_prime(n, n - 1));
+	return (_prime(n, n + 1));
 }
 /**
  * _prime - checks prime recursively_
@@ -27,11 +27,11 @@ int _prime(int i, int n)
 	{
 		return (1);
 	}
-	if (n % i == 0 && i > 0)
+	if (n % i == 0 && i > 1)
 	{
-		return (0);
+		return (1);
 	}
-	return (_prime(n, i - 1));
+	return (_prime(n, i + 1));
 
 }
 
