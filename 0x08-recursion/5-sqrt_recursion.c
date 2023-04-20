@@ -13,6 +13,11 @@ int _sqrt_recursion(int n)
         }
         return (sqrt_r(n, 0));
 }
+/**
+ * 
+ *
+ *
+ */
 int sqrt_r(int n, int i)
 {
         if (i * i > n)
