@@ -1,16 +1,27 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
-The comments section. 
-
-The function declaration follo after the main block.
-
-*/
-
-int main(void)
+ * _strncpy - copying a string
+ * @dest: input value
+ * @src: input value
+ * @n: input value
+ *
+ * Return: dest
+ */
+char *_strncpy(char *dest, char *src, int n)
 {
+        int j;
 
-printf();
-return 0;
+        j = 0;
+        while (j < n && src[j] != '\0')
+        {
+                dest[j] = src[j];
+                j++;
+        }
+        while (j < n)
+        {
+                dest[j] = '\0';
+                j++;
+        }
+
+        return (dest);
 }
-

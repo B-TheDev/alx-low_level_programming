@@ -1,16 +1,13 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
-The comments section. 
-
-The function declaration follo after the main block.
-
-*/
-
-int main(void)
+ * _puts - prints a string, followed by a new line to the output
+ * @str: string to print
+ */
+void _puts(char *str)
 {
-
-printf();
-return 0;
+        while (*str != '\0')
+        {
+                _putchar(*str++);
+        }
+                _putchar('\n');
 }
-

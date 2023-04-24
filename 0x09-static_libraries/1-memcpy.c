@@ -1,16 +1,20 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
-The comments section. 
-
-The function declaration follo after the main block.
-
-*/
-
-int main(void)
+ * _memcpy - function copies n bytes from memory area src to memory area dest
+ * @dest: - memory area copied to
+ * @src: - memory area copied from
+ * *@n: number of bytes
+ *
+ * Return:  a pointer to dest
+ */
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-
-printf();
-return 0;
+        int r;
+        int i = n;
+        for (r = 0; r < i; r++)
+        {
+                dest[r] = src[r];
+                n--;
+        }
+        return (dest);
 }
-

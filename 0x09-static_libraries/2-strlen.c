@@ -1,16 +1,18 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
-The comments section. 
-
-The function declaration follo after the main block.
-
-*/
-
-int main(void)
+ * _strlen - returns the length of a string
+ * @s: string
+ * Return: length
+ */
+int _strlen(char *s)
 {
+        int strlength = 0;
 
-printf();
-return 0;
+        while (*s != '\0')
+        {
+                strlength++;
+                s++;
+        }
+
+        return (strlength);
 }
-

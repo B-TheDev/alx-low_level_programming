@@ -1,16 +1,23 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
-The comments section. 
-
-The function declaration follo after the main block.
-
-*/
-
-int main(void)
+ * char *_strcpy - copies the string pointed to by src
+ * @dest: copy to
+ * @src: copy from
+ * Return: string
+ */
+char *_strcpy(char *dest, char *src)
 {
+        int l = 0;
+        int x = 0;
 
-printf();
-return 0;
+        while (*(src + l) != '\0')
+        {
+                l++;
+        }
+        for ( ; x < l ; x++)
+        {
+                dest[x] = src[x];
+        }
+        dest[l] = '\0';
+        return (dest);
 }
-
