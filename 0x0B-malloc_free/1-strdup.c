@@ -1,4 +1,4 @@
-include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
 /**
@@ -14,18 +14,21 @@ char *_strdup(char *str)
 	if (str == NULL)
 	{
 		return(NULL);
+		i = 0;
 	}
-	i = 0;
 	while (str[i] != '\0')
+	{
 		i++;
-
-	str1 = maclloc(sizeof(char) * (i + 1));
+		str1 = malloc(sizeof(char) * (i + 1));
+	}
 	if (str1 == NULL)
-	return (NULL)
+	{
+		return (NULL);
+	}
 	
 		for (r = 0; str[r]; r++)
-			str1[r] = str[r]; 
+		str1[r] = str[r];
 
-return (str1);
+		return (str1);
 
 }
