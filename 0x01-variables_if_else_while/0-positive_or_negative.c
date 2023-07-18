@@ -4,7 +4,7 @@
 
 /**
  * main - Determines if the number generated is positive or negative
- * 
+ *
  *Return: 0 - Success
  */
 
