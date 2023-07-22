@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include "main.h"
 
-/**		
- * _atoi - converts a string to an integer	
+/**
+ * _atoi - converts a string to an integer
  * @s: The string to be converted
  *
  * Return: the int converted from the string
@@ -38,8 +38,8 @@ int _atoi(char *s)
 
 	return (n);
 }
-		
-		
+
+
 /**
  * main - a program that multiplies two numbers
  * @argc: number of arguments
