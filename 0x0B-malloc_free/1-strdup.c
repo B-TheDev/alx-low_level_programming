@@ -25,7 +25,7 @@ char *_strdup(char *str)
 	return (NULL);
 
     /** Copy the characters from str to str1*/
-	for (r = 0; r <= i; r++) /** Use "<=" to copy the null-terminator as well*/
+	for (r = 0; r <= i; r++)
 	str1[r] = str[r];
 
 	return (str1);
