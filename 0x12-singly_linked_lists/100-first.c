@@ -3,8 +3,8 @@
 void first(void) __attribute__ ((constructor));
 
 /**
- * first -  a function that prints 
- * You're beat! and yet, you must allow,\nI bore my house upon my back!\n 
+ * first -  a function that prints
+ * You're beat! and yet, you must allow,\nI bore my house upon my back!\n
  * before the main function is executed.
  * function is executed
  */
